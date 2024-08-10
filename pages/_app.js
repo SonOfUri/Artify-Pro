@@ -20,12 +20,12 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>AI Image ART</title>
+        <title>Artify+</title>
         <meta
           name="description"
-          content="AI Image Art Generator powered by @artify"
+          content="Artify+ Generator powered by @artify"
         />
-        <link rel="shortcut icon" href={`/assets/ailogo.png`} />
+        <link rel="shortcut icon" href={`/assets/ailogoII.png`} />
       </Head>
       {auth && <Auth />}
 

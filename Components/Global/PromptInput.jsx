@@ -55,9 +55,9 @@ const PromptInput = ({
           </div>
           <div className="flex space-x-2 px-2">
             <div
-              onClick={() => changeModel("AI Image Art Dall-e-v3")}
+              onClick={() => changeModel("Artify+ Dall-e-v3")}
               className={`text-xs rounded-md sm:text-sm group mt-4 whitespace-nowrap flex-1 flex select-none cursor-pointer hover:brightness-110 bg-gradient-to-t drop-shadow items-center justify-center px-2.5 ${
-                activeModel == "AI Image Art Dall-e-v3"
+                activeModel == "Artify+ Dall-e-v3"
                   ? "py-2.5 w-fit-content active:scale-95 transition-all from-indigo-900 via-indigo-900 to-indigo-800"
                   : "from-zinc-700 via-zinc-700 to-zinc-700  py-2 w-fit-content"
               }`}
@@ -65,9 +65,9 @@ const PromptInput = ({
               <AILogo /> &nbsp;&nbsp;Dall-e-V3
             </div>
             <div
-              onClick={() => changeModel("AI Image Art Dall-e-v2")}
+              onClick={() => changeModel("Artify+ Dall-e-v2")}
               className={`text-xs rounded-md sm:text-sm group mt-4 whitespace-nowrap flex-1 flex select-none cursor-pointer hover:brightness-110 bg-gradient-to-t drop-shadow items-center justify-center px-2.5 ${
-                activeModel == "AI Image Art Dall-e-v2"
+                activeModel == "Artify+ Dall-e-v2"
                   ? "py-2.5 w-fit-content active:scale-95 transition-all from-indigo-900 via-indigo-900 to-indigo-800"
                   : "from-zinc-700 via-zinc-700 to-zinc-700  py-2 w-fit-content"
               }`}
@@ -77,7 +77,7 @@ const PromptInput = ({
           </div>
 
           {/* ///2 */}
-          {activeModel == "AI Image Art Dall-e-v2" && (
+          {activeModel == "Artify+ Dall-e-v2" && (
             <>
               <label
                 htmlFor="levelRange"
@@ -106,7 +106,7 @@ const PromptInput = ({
             </>
           )}
 
-          {activeModel == "AI Image Art Dall-e-v2" ? (
+          {activeModel == "Artify+ Dall-e-v2" ? (
             <ActiveModel
               activeModel={activeModel}
               size1="256x256"

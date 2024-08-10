@@ -41,7 +41,7 @@ const createPostWithImagesController_V3 = async (req, res, next) => {
 
     const newPost = new Post({
       user: userId,
-      aiModel: "AI Image Art Dall-e-v3",
+      aiModel: "Artify+ Dall-e-v3",
       prompt: prompt,
       negativePrompt: negativePrompt,
       revisedPrompt: revisedPrompt,
@@ -102,10 +102,10 @@ const createPostWithImagesController_V2 = async (req, res, next) => {
 
     const newPost = new Post({
       user: userId,
-      aiModel: "AI Image Art Dall-e-v2",
+      aiModel: "Artify+ Dall-e-v2",
       prompt: prompt,
       negativePrompt: negativePrompt,
-      revisedPrompt: "No avaliable in AI Image Art Dall-e-v2 Model",
+      revisedPrompt: "Not avaliable in Artify+ Dall-e-v2 Model",
       size: size,
       quality: "Normal",
       quentity: n,

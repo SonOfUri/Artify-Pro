@@ -123,7 +123,7 @@ const apertuer = () => {
   const changeCategory = (category) => {
     const model = localStorage.getItem("ACTIVE_MODEL");
 
-    if (model === "AI Image Art Dall-e-v2") {
+    if (model === "Artify+ Dall-e-v2") {
       if (category === "Reel") {
         setAllAIImages(V2_256x256);
         setCategory("Reel");
@@ -166,7 +166,7 @@ const apertuer = () => {
         const V3_1024x1792Temp = [];
 
         response.forEach((el) => {
-          if (el.aiModel === "AI Image Art Dall-e-v2") {
+          if (el.aiModel === "Artify+ Dall-e-v2") {
             if (el.size === "256x256") {
               V2_256x256Temp.push(el);
             } else if (el.size === "512x512") {
@@ -174,7 +174,7 @@ const apertuer = () => {
             } else if (el.size === "1024x1024") {
               V2_1024x1024Temp.push(el);
             }
-          } else if (el.aiModel === "AI Image Art Dall-e-v3") {
+          } else if (el.aiModel === "Artify+ Dall-e-v3") {
             if (el.size === "1024x1024") {
               V3_1024x1024Temp.push(el);
             } else if (el.size === "1792x1024") {
@@ -194,7 +194,7 @@ const apertuer = () => {
 
         const model = localStorage.getItem("ACTIVE_MODEL");
 
-        if (model === "AI Image Art Dall-e-v2") {
+        if (model === "Artify+ Dall-e-v2") {
           setAllAIImages(V2_256x256Temp);
         } else {
           setAllAIImages(V3_1792x1024Temp);
@@ -231,7 +231,7 @@ const apertuer = () => {
                     error={error}
                     activeUser={activeUser}
                     generateFunction={() =>
-                      activeModel == "AI Image Art Dall-e-v3"
+                      activeModel == "Artify+ Dall-e-v3"
                         ? CLICK_V3(promptV3)
                         : CLICK_V2(promptV2)
                     }

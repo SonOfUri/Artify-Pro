@@ -4,11 +4,11 @@ import { Tick, ArrowDown } from "../SVG/index";
 
 const Notic = () => {
   const [openNotic, setOpenNotic] = useState(false);
-  const [activeModel, setActiveModel] = useState("AI Image Art Dall-e-v2");
+  const [activeModel, setActiveModel] = useState("Artify+ Dall-e-v2");
 
-  const AI_MODEL = ["AI Image Art Dall-e-v2", "AI Image Art Dall-e-v3"];
+  const AI_MODEL = ["Artify+ Dall-e-v2", "Artify+ Dall-e-v3"];
 
-  const [aiModel, setAiModel] = useState("AI Image Art Dall-e-v2");
+  const [aiModel, setAiModel] = useState("Artify+ Dall-e-v2");
 
   const changeModel = (model) => {
     setAiModel(model);

@@ -53,7 +53,7 @@ const likes = () => {
   const changeCategory = (category) => {
     const model = localStorage.getItem("ACTIVE_MODEL");
     console.log(model, "3");
-    if (model === "AI Image Art Dall-e-v2") {
+    if (model === "Artify+ Dall-e-v2") {
       if (category === "Reel") {
         setAllAIImages(V2_256x256);
         setCategory("Reel");
@@ -97,7 +97,7 @@ const likes = () => {
 
         response.forEach((el) => {
           if (el.likes.includes(user._id)) {
-            if (el.aiModel === "AI Image Art Dall-e-v2") {
+            if (el.aiModel === "Artify+ Dall-e-v2") {
               if (el.size === "256x256") {
                 V2_256x256Temp.push(el);
               } else if (el.size === "512x512") {
@@ -105,7 +105,7 @@ const likes = () => {
               } else if (el.size === "1024x1024") {
                 V2_1024x1024Temp.push(el);
               }
-            } else if (el.aiModel === "AI Image Art Dall-e-v3") {
+            } else if (el.aiModel === "Artify+ Dall-e-v3") {
               if (el.size === "1024x1024") {
                 V3_1024x1024Temp.push(el);
               } else if (el.size === "1792x1024") {
@@ -126,7 +126,7 @@ const likes = () => {
 
         const model = localStorage.getItem("ACTIVE_MODEL");
 
-        if (model === "AI Image Art Dall-e-v2") {
+        if (model === "Artify+ Dall-e-v2") {
           setAllAIImages(V2_512x512Temp);
         } else {
           setAllAIImages(V3_1024x1792Temp);

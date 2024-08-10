@@ -57,7 +57,7 @@ const history = () => {
   const changeCategory = (category) => {
     const model = localStorage.getItem("ACTIVE_MODEL");
 
-    if (model === "AI Image Art Dall-e-v2") {
+    if (model === "Artify+ Dall-e-v2") {
       if (category === "Reel") {
         setAllAIImages(V2_256x256);
         setAllPostCopy(V2_256x256);
@@ -106,7 +106,7 @@ const history = () => {
         const V3_1024x1792Temp = [];
 
         response.forEach((el) => {
-          if (el.aiModel === "AI Image Art Dall-e-v2") {
+          if (el.aiModel === "Artify+ Dall-e-v2") {
             if (el.size === "256x256") {
               V2_256x256Temp.push(el);
             } else if (el.size === "512x512") {
@@ -114,7 +114,7 @@ const history = () => {
             } else if (el.size === "1024x1024") {
               V2_1024x1024Temp.push(el);
             }
-          } else if (el.aiModel === "AI Image Art Dall-e-v3") {
+          } else if (el.aiModel === "Artify+ Dall-e-v3") {
             if (el.size === "1024x1024") {
               V3_1024x1024Temp.push(el);
             } else if (el.size === "1792x1024") {
@@ -134,7 +134,7 @@ const history = () => {
 
         const model = localStorage.getItem("ACTIVE_MODEL");
 
-        if (model === "AI Image Art Dall-e-v2") {
+        if (model === "Artify+ Dall-e-v2") {
           setAllAIImages(V2_256x256Temp);
           setAllPostCopy(V2_256x256Temp);
         } else {

@@ -20,7 +20,7 @@ const ActiveModel = ({
 }) => {
   return (
     <>
-      {activeModel == "AI Image Art Dall-e-v3" && (
+      {activeModel == "Artify+ Dall-e-v3" && (
         <>
           <div class="mt-3">
             <div class="select-none opacity-50 text-xs flex items-center justify-start mb-1">

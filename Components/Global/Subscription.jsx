@@ -16,8 +16,8 @@ const Subscription = ({ activeUser }) => {
           <p class="mt-2 text-sm">
             <span>
               {activeUser?.credit > 5
-                ? `Explore your creativity, and generate your own incridable AI Image art, by just try few line of prompts`
-                : `Currently you credit is very limited, buy credit to explore you AI Image art generate to create unlimated images and explore you creativity`}
+                ? `Explore your creativity, and generate your own incridable Artify+, by just try few line of prompts`
+                : `Currently you credit is very limited, buy credit to explore you Artify+ generate to create unlimated images and explore you creativity`}
             </span>
           </p>
           <a href="/account">
