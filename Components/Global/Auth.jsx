@@ -121,7 +121,7 @@ const Auth = () => {
                   }}
                   onClick={() => setAuth(false)}
                 >
-                  SingUp <IoLogInOutline />
+                  Sign Up <IoLogInOutline />
                 </p>
               </div>
             ) : (
@@ -167,7 +167,7 @@ const Auth = () => {
                   onClick={() => CALLING_REGISTER_USER(signUp)}
                   className="hover:brightness-110 bg-gradient-to-t from-indigo-800 via-indigo-800 to-indigo-700 border border-indigo-800 px-4 py-1.5 rounded-lg shadow h-9 w-64 drop-shadow flex items-center justify-center mt-3"
                 >
-                  SingUp {loader && <Loader />}
+                  Sign Up {loader && <Loader />}
                 </button>
                 {error && (
                   <p
